@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            height: 100vh;
+            background-color: #eee;
+        }
+        .flex{
+            display: flex;
+        }
+        .bjb{
+            background-color: white;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .flex1{
+            flex:1;
+        }
+        .mg{
+            margin: 8px;
+        }
+        .mgr{
+            margin-right: 8px;
+        }
+        .mgt{
+            margin-top: 8px;
+        }
+        .center{
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body class="flex ">
+    <!--侧边栏-->
+    <div class="flex bjb column" style="width: 200px;">
+        <div class="flex column center" style="height: 125px;width: autoo;">
+            <img  src="https://s21.ax1x.com/2025/03/01/pE8ooTA.jpg" 
+            style="width: 50px;height: 50px;border-radius: 100%;"/>快乐星球
+        </div>
+        <div style="border-top: 1px solid #00CCCC;">哈哈哈我是文字</div>
+    </div>
+    <!--主区域-->
+    <div class="flex flex1 column" style="z-index: 2;">
+        <!--头-->
+        <div class="flex bjb" style="width: auto;height: 155px;z-index: 1;">哈哈哈我是文字</div>
+        <!--内容-->
+        <div class="flex flex1" style="overflow:auto;">
+            <!--左-->
+            <div  class="flex mg column" style="flex:3;">
+                <!--头-->
+                <div class="flex ">
+                <div class="mgt bjb mgr" style="height: 175px;flex:1;">哈哈哈我是文字</div>
+                <div class="mgt bjb mgr" style="height: 175px;flex:1;">哈哈哈我是文字</div>
+                <div class="mgt bjb mgr" style="height: 175px;flex:1;">哈哈哈我是文字</div>
+                <div class="mgt  bjb" style="height: 175px;flex:1;;">哈哈哈我是文字</div>
+                </div>
+                <!--内容-->
+                <div class="flex column">
+                <div class="mgt bjb" style="height: 175px;">哈哈哈我是文字</div>
+                <div class="mgt bjb" style="height: 175px;">哈哈哈我是文字</div>
+                <div class="mgt bjb" style="height: 175px;">哈哈哈我是文字</div>
+                <div class="mgt bjb" style="height: 175px;">哈哈哈我是文字</div>
+                </div>
+            </div>    
+            <!--右-->
+            <div class="flex column" style="flex:1;height:auto;width: auto;">
+                <!--头-->
+                <div class="bjb mgt" style="height: 25vh; width: auto;">哈哈哈我是文字</div>
+                <!--内容-->
+                <div class="bjb mgt" style="width: auto;height: 75vh;">哈哈哈我是文字</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
